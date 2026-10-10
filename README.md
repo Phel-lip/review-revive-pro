@@ -1,6 +1,6 @@
 # Review Revive Pro
 
-abra o projeto e apenas continue de onde parou corrigindo a sessão das avaliações pro salão https://www.instagram.com/a.m_cabelos/ pfv quero q fique parecido com a referencia: https://studio-santana.vercel.app/
+abra o projeto e apenas continue de onde parou corrigindo a sessão das avaliações pro salão https://www.instagram.com/a.m_cabelos/ pfv quero q fique parecido com a referencia: https://studio-santana.vercel.app/.
 
 This project was built with [Lovable](https://lovable.dev).
 
