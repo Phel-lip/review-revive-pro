@@ -6,10 +6,8 @@ import { BookingModal } from "@/components/BookingModal";
 import { ServicesSection } from "@/components/ServicesSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { Button } from "@/components/ui/button";
-import beforeAsset from "@/assets/hair-before.png.asset.json";
-const before = beforeAsset.url;
-import afterAsset from "@/assets/hair-after.png.asset.json";
-const after = afterAsset.url;
+import before from "@/assets/hair-before.png";
+import after from "@/assets/hair-after.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -149,7 +147,7 @@ function BeforeAfter({ onBook }: { onBook: () => void }) {
     <section id="antes-depois" className="scroll-mt-20 py-16 md:py-24">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 md:grid-cols-2">
         <div>
-          <SectionTitle eyebrow="Antes e depois" title={<>Cabelos brilhosos,<br /><em className="text-brand">coloração e tratamento.</em></>} />
+          <SectionTitle eyebrow="Antes e depois" title={<>Cabelos brilhosos,<br /><em className="text-brand">coloração e tratamento.</em></>} sub="Antes e depois que mostram o trabalho. Brilho, movimento e um novo visual." />
           <Button variant="service" size="service" onClick={onBook}>Quero esse resultado.<ArrowRight /></Button>
         </div>
         <figure>
