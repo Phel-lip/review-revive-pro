@@ -8,3 +8,10 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Preserve the imported salon page as the baseline and scope presentation changes to the requested sections, so unrelated booking and content remain unchanged.
+- Keep service identities, categories, images and descriptions in the shared salon catalog, so filtering and WhatsApp booking use the same services.
+- Keep services presentation in its dedicated component and section-scoped CSS, so catalog updates do not restyle surrounding sections.
+- Import uploaded and downloaded media through this project's Lovable Assets pointers; import image edits directly, so photos remain available after publishing.
+- Keep public review data separate from section presentation and only display verified ratings, quotes and Google listing links, so source updates never introduce invented testimonials.
+- When no verified Google review destination exists, offer WhatsApp feedback and a non-testimonial empty state, so the review section stays usable without misrepresenting its source.
