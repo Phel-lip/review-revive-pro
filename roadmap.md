@@ -7,6 +7,6 @@
 - [ ] Publicar avaliações e botão do Google: aguarda link correto do perfil do salão e depoimentos verificáveis.
 
 ## Fotos locais e descrição
-- [ ] Armazenar todas as fotos localmente e remover a dependência das URLs Lovable na página.
-- [ ] Adicionar a descrição solicitada ao antes/depois.
-- [ ] Verificar fotos, comparação e agendamento.
+- [x] Armazenar todas as fotos localmente e remover a dependência das URLs Lovable na página.
+- [x] Adicionar a descrição solicitada ao antes/depois.
+- [x] Verificar fotos, comparação e agendamento.
