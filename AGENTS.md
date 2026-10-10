@@ -12,6 +12,6 @@
 - Preserve the imported salon page as the baseline and scope presentation changes to the requested sections, so unrelated booking and content remain unchanged.
 - Keep service identities, categories, images and descriptions in the shared salon catalog, so filtering and WhatsApp booking use the same services.
 - Keep services presentation in its dedicated component and section-scoped CSS, so catalog updates do not restyle surrounding sections.
-- Import uploaded and downloaded media through this project's Lovable Assets pointers; import image edits directly, so photos remain available after publishing.
+- Bundle salon photos through local image imports and keep the complete photo collection in the repository, so the page's images work independently of Lovable asset hosting.
 - Keep public review data separate from section presentation and only display verified ratings, quotes and Google listing links, so source updates never introduce invented testimonials.
 - When no verified Google review destination exists, offer WhatsApp feedback and a non-testimonial empty state, so the review section stays usable without misrepresenting its source.
