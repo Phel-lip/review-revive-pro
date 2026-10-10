@@ -211,7 +211,14 @@
 .reviews-inner { max-width: 1152px; margin: 0 auto; padding: 0 20px; }
 .reviews-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; margin-bottom: 36px; }
 .reviews-eyebrow { font-size: 12px; text-transform: uppercase; margin-bottom: 16px; color: var(--reviews-star); }
-.reviews-title { font-family: var(--font-display); font-size: 44px; line-height: 1.15; }
+.reviews-title { font-family: var(--font-display); font-size: 48px; line-height: 1.15; }
+.reviews-title em { color: var(--reviews-star); }
+.reviews-empty { display: flex; align-items: center; gap: 24px; border-top: 1px solid var(--reviews-border); padding-top: 36px; }
+.reviews-quote-mark { width: 44px; height: 44px; flex-shrink: 0; color: var(--reviews-star); stroke-width: 1; }
+.reviews-empty-title { font-family: var(--font-display); font-size: 26px; line-height: 1.35; }
+.reviews-empty-copy { color: var(--reviews-muted); font-size: 14px; line-height: 1.65; margin-top: 8px; }
+.review-social-action { color: var(--reviews-foreground); border: 1px solid var(--reviews-border); background: transparent; border-radius: 6px; margin-left: auto; flex-shrink: 0; }
+.review-social-action:hover { color: var(--reviews-star); border-color: var(--reviews-star); }
 .reviews-summary { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
 .reviews-score { font-family: var(--font-display); font-size: 48px; line-height: 1; }
 .reviews-stars { display: flex; align-items: center; gap: 2px; color: var(--reviews-star); }
@@ -236,6 +243,11 @@
   .reviews-heading { align-items: flex-start; flex-direction: column; gap: 24px; }
   .reviews-title { font-size: 36px; }
   .reviews-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .reviews-heading { margin-bottom: 28px; }
+  .reviews-empty { align-items: flex-start; flex-wrap: wrap; gap: 20px; padding-top: 28px; }
+  .reviews-empty > div { flex: 1; min-width: 200px; }
+  .reviews-empty-title { font-size: 23px; }
+  .review-social-action { margin-left: 0; }
   .reviews-invitation-inner { flex-direction: column; align-items: flex-start; gap: 24px; }
   .reviews-invitation h3 { font-size: 26px; }
 }

@@ -1,4 +1,4 @@
-import { Star, ArrowUpRight } from "lucide-react";
+import { Star, ArrowUpRight, Quote, Instagram, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SALON } from "@/lib/salon";
 import { SALON_REVIEWS } from "@/lib/salon-reviews";
@@ -9,6 +9,7 @@ function Stars({ rating }: { rating: number }) {
 
 export function ReviewsSection() {
   const reviewLink = SALON_REVIEWS.writeReviewUrl ?? SALON_REVIEWS.listingUrl;
+  const feedbackLink = `https://wa.me/${SALON.whatsapp}?text=${encodeURIComponent(`Olá, ${SALON.name}! Gostaria de compartilhar minha experiência no salão: `)}`;
   return (
     <>
       <section id="avaliacoes" className="reviews-section scroll-mt-20" aria-labelledby="reviews-title">
@@ -30,13 +31,23 @@ export function ReviewsSection() {
               <figcaption className="review-author"><a href={review.sourceUrl} target="_blank" rel="noopener noreferrer">{review.author} · Google</a></figcaption>
             </figure>)}
           </div>}
+          {SALON_REVIEWS.reviews.length === 0 && <div className="reviews-empty">
+            <Quote className="reviews-quote-mark" aria-hidden="true" />
+            <div>
+              <p className="reviews-empty-title">O próximo depoimento pode ser o seu.</p>
+              <p className="reviews-empty-copy">Cada cabelo tem uma história. Queremos conhecer a sua.</p>
+            </div>
+            <Button variant="reviewSocial" size="service" asChild>
+              <a href={SALON.instagram} target="_blank" rel="noopener noreferrer"><Instagram />Conheça a A.M no Instagram<ArrowUpRight /></a>
+            </Button>
+          </div>}
           {SALON_REVIEWS.listingUrl && <p className="reviews-source">Avaliações públicas de clientes no Google. <a href={SALON_REVIEWS.listingUrl} target="_blank" rel="noopener noreferrer">Ver todas as avaliações</a></p>}
         </div>
       </section>
       <section className="reviews-invitation" aria-label="Avalie sua experiência">
         <div className="reviews-invitation-inner">
           <div><h3>Já foi atendida na {SALON.shortName} Cabelos &amp; Produções?</h3><p>Sua avaliação ajuda outras clientes a nos encontrarem.</p></div>
-          {reviewLink ? <Button variant="reviewGoogle" size="service" asChild><a href={reviewLink} target="_blank" rel="noopener noreferrer"><Star />Avaliar no Google<ArrowUpRight /></a></Button> : <Button variant="reviewGoogle" size="service" disabled><Star />Avaliar no Google</Button>}
+          <Button variant="reviewGoogle" size="service" asChild><a href={reviewLink ?? feedbackLink} target="_blank" rel="noopener noreferrer">{reviewLink ? <Star /> : <MessageCircle />}{reviewLink ? "Avaliar no Google" : "Enviar meu depoimento"}<ArrowUpRight /></a></Button>
         </div>
       </section>
     </>

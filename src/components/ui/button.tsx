@@ -9,6 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
+        reviewSocial: "review-social-action",
         reviewGoogle: "review-google-action",
         service: "service-action",
         serviceFilter: "service-filter",

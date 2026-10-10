@@ -14,3 +14,4 @@
 - Keep services presentation in its dedicated component and section-scoped CSS, so catalog updates do not restyle surrounding sections.
 - Import uploaded and downloaded media through this project's Lovable Assets pointers; import image edits directly, so photos remain available after publishing.
 - Keep public review data separate from section presentation and only display verified ratings, quotes and Google listing links, so source updates never introduce invented testimonials.
+- When no verified Google review destination exists, offer WhatsApp feedback and a non-testimonial empty state, so the review section stays usable without misrepresenting its source.

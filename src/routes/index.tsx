@@ -20,12 +20,14 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Conheça os trabalhos reais de cabelos e unhas da A.M Cabelos & Produções e solicite seu horário." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: SALON.heroImg },
+      { name: "twitter:image", content: SALON.heroImg },
     ],
   }),
   component: Index,
 });
 
-const NAV = [["Serviços", "#servicos"], ["Antes e depois", "#antes-depois"], ["Dúvidas", "#faq"]];
+const NAV = [["Serviços", "#servicos"], ["Antes e depois", "#antes-depois"], ["Avaliações", "#avaliacoes"], ["Dúvidas", "#faq"]];
 
 function Index() {
   const [modal, setModal] = useState<{ open: boolean; service: string | null }>({ open: false, service: null });
