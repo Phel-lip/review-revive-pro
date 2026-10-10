@@ -1,15 +1,9 @@
-import heroAsset from "@/assets/am-hero-upload.png.asset.json";
-const hero = heroAsset.url;
-import corteAsset from "@/assets/service-corte-refined.jpg.asset.json";
-const corte = corteAsset.url;
-import finalizacaoAsset from "@/assets/service-escova-refined.jpg.asset.json";
-const finalizacao = finalizacaoAsset.url;
-import tratamentoAsset from "@/assets/am-fashion-result.jpg.asset.json";
-const tratamento = tratamentoAsset.url;
-import luzesAsset from "@/assets/service-luzes-refined.jpg.asset.json";
-const luzes = luzesAsset.url;
-import unhasAsset from "@/assets/service-unhas-refined.jpg.asset.json";
-const unhas = unhasAsset.url;
+import hero from "@/assets/am-hero-upload.png";
+import corte from "@/assets/service-corte-refined.jpg";
+import finalizacao from "@/assets/service-escova-refined.jpg";
+import tratamento from "@/assets/am-fashion-result.jpg";
+import luzes from "@/assets/service-luzes-refined.jpg";
+import unhas from "@/assets/service-unhas-refined.jpg";
 
 // Single source of truth for salon details (verified on the official Instagram bio).
 export const SALON = {
